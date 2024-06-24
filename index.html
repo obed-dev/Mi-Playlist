@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Obed-Dev Playlist</title>
+</head>
+ 
+<header>   
+   <h1> Obed-Dev Playlist</h1>
+
+</header>
+<body >
+
+    <div class="container">
+    <img src="img/postmalone-sainttropez gif.gif" class="image-fluid"  alt="post malone">
+    <img src="img/artworks-uAl3cIZAqtVDXkmi-esvy1Q-t500x500.jpg" class="image-fluid" alt="Nunberg">
+    <img src="img/1606753041469-web-lika-nova-foto-1-por-juliana-garcia-1.jpeg" class="image-fluid" alt="Depresion sonora">
+
+
+</div>
+    <div  class="music-player" >
+        
+        <div class="controls">
+            <audio src="Canciones/y2mate.com - Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3"  id="audio-player"> </audio>
+            <p></p>
+             <button  id="play-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/2226/PNG/512/play_icon_134504.png" alt="png de play "class="icons" > </button>
+            <button id="pause-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-pause-stop-button-player-music-4593160_122283.png" alt="" class="icons">  </button>
+            <button id="prev-btn"  class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-previous-arrow-back-left-music-4593162_122281.png" alt="repeat png" class="icons" > </button>
+            <button id="next-btn"   class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-next-music-player-play-media-4593176_122256.png" alt="next png" class="icons"> </button>
+             
+                <progress
+                id="progress-bar"
+                value="0"
+                max="1"
+                style="width: 100%; margin-top: 10px; cursor: pointer; "
+                onclick="seek(event)"
+              >  </progress>
+                 playing ... 
+              
+
+            </div>
+           <div class="volume-justify"> 
+            <img src="https://cdn.icon-icons.com/icons2/909/PNG/512/volume_icon-icons.com_70827.png" alt="volume png" class="volume">
+            <input type="range" name="volume" id="volume-slider"
+            min="0" max="1" step="0.01" value="1" >
+        </div>
+    </div>
+    
+
+
+<script src="js/playlist.js"></script>
+<script src="js/sum.js"></script>
+
+
+</body>
+</html>
