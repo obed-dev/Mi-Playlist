@@ -28,11 +28,16 @@
         <div class="controls">
             <audio src="Canciones/y2mate.com - Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3"  id="audio-player"> </audio>
             <p></p>
-             <button  id="play-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/2226/PNG/512/play_icon_134504.png" alt="png de play "class="icons" > </button>
-            <button id="pause-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-pause-stop-button-player-music-4593160_122283.png" alt="" class="icons">  </button>
-            <button id="prev-btn"  class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-previous-arrow-back-left-music-4593162_122281.png" alt="repeat png" class="icons" > </button>
-            <button id="next-btn"   class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-next-music-player-play-media-4593176_122256.png" alt="next png" class="icons"> </button>
-             
+            <div class="container-buttons"> 
+                <button  id="play-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/2226/PNG/512/play_icon_134504.png" alt="png de play "class="icons" > </button>
+                <button id="pause-btn"  class="btn btn-success" > <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-pause-stop-button-player-music-4593160_122283.png" alt="" class="icons">  </button>
+                <button id="prev-btn"  class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-previous-arrow-back-left-music-4593162_122281.png" alt="repeat png" class="icons" > </button>
+                <button id="next-btn"   class="btn btn-success"> <img src="https://cdn.icon-icons.com/icons2/1933/PNG/512/iconfinder-next-music-player-play-media-4593176_122256.png" alt="next png" class="icons"> </button>
+                  </div>
+             <div id="current-track-info">
+                <h2 id="track-title"></h2>
+                <h2 id="track-artist"></h2>
+            </div>
                 <progress
                 id="progress-bar"
                 value="0"
@@ -42,7 +47,7 @@
               >  </progress>
                  playing ... 
               
-
+   
             </div>
            <div class="volume-justify"> 
             <img src="https://cdn.icon-icons.com/icons2/909/PNG/512/volume_icon-icons.com_70827.png" alt="volume png" class="volume">
@@ -54,7 +59,6 @@
 
 
 <script src="js/playlist.js"></script>
-<script src="js/sum.js"></script>
 
 
 </body>

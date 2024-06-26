@@ -1,94 +1,133 @@
-* { 
-
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    
-} 
-body { 
-
-    background-color: rgb(26, 26, 26);
 }
-.icons { 
+
+body {
+    background-color: rgb(26, 26, 26);
+    font-family: Arial, sans-serif;
+}
+
+.icons {
     width: 2rem;
     height: 2rem;
-   
-    
-
 }
-.btn  { 
 
+.btn {
     background-color: #1DB954;
-
 }
 
-.volume { 
-    background-color: #1DB954; 
+.volume {
     width: 2rem;
     height: 2rem;
     padding: 2px;
     border-radius: 4px;
-
-}
-#volume-slider { 
-
-    color:#1DB954; 
 }
 
-.container  { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-   
+#volume-slider {
+    width: 100%;
 }
 
-header { 
-    text-align: center;
-    font-family: 'Sodo-sans';
-    color: aliceblue;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    
-}
-
-.image-fluid  { 
-  
-  
-    width: 60rem;
-   height: 40rem;
- 
-    padding: 40px;
-    filter: brightness(90%);
-   
-  
-  
-    
-     
-}
-
-
-.music-player { 
-
-
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-width: 100%;
-
-  
-
+    flex-wrap: wrap;
+    height: 55dvh;
 }
 
-.volume-justify { 
-  
-display: flex;
-margin-left: 10rem;
-color: #1DB954;
-
-    
-
-    
-
+header {
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
+.image-fluid {
+    width: 100%;
+    height: auto;
+    max-height: 45rem;
+    padding: 20px;
+    filter: brightness(90%);
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.volume-justify {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+h2 {
+    color: aliceblue;
+    margin: 0.5rem 0;
+}
+
+h1 { 
+    margin: 10px;
+}
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .container 
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 55dvh;}
+    
+
+    .image-fluid {
+        width: 100%;
+        height: 20rem;
+        max-height: 45rem;
+        padding: 20px;
+        filter: brightness(90%);
+    }
+    
+    
+    
+}
+
+
+
+
+@media (min-width: 768px) {
+    .music-player {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20rem;
+    }
+
+    .volume-justify {
+        width: auto;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .image-fluid {
+        max-height: 35rem;
+        width: 100%;
+    }
+}

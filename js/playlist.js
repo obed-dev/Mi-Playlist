@@ -2,7 +2,7 @@
 const playlist = [
   {
     title: "Sunflower",
-    artist: "post malone",
+    artist: "Post Malone",
     src: "Canciones/y2mate.com - Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3",
    
   },
@@ -34,6 +34,9 @@ const progressBar = document.getElementById("progress-bar");
 
 let slide = document.querySelectorAll('.image-fluid');
 
+const trackTitle = document.getElementById("track-title");
+const trackArtist = document.getElementById("track-artist");
+
 let currentIndex = 0;
   let slides = slide;
   let totalslides = slides.length; 
@@ -56,9 +59,9 @@ let currentIndex = 0;
 function loadTrack(track) {
   audioPlayer.src = playlist[track].src;
   audioPlayer.load();
+  trackTitle.innerHTML = playlist[track].title;
+  trackArtist.innerHTML = playlist[track].artist;
 }
-
-
 
 
 
@@ -155,10 +158,6 @@ valorCancion.addEventListener('ended', () => {
   
 
 });
-
-
-  
-
 
 
 
